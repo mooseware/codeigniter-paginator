@@ -15,5 +15,3 @@ Configuration
 
 Usage
 -----
-
-    $this->load->library('unzip');
