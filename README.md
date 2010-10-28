@@ -16,4 +16,10 @@ coming soon
 
 ## Usage
 
+
+## Todo
+
+- language files to be used by library
+- some code facelift
+
 coming soon
