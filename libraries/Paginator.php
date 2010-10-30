@@ -67,6 +67,7 @@ class Paginator {
 	 **/
 	public function __construct() {
 		$this->ci =& get_instance();
+		$this->ci->lang->load('paginator');
 	}
 
 	/**
@@ -106,7 +107,7 @@ class Paginator {
 	  }
 
 	  // start navigation
-	  $this->navigation.= "$this->all_objects gefunden - ".($this->start + 1)." bis $this->object_number_to_display angezeigt<br />";
+	  $this->navigation.= sprintf($this->ci->lang->line('paginator_pagination_summary'),$this->all_objects, ($this->start + 1), $this->object_number_to_display);
 
 	  $this->navigation.= '<div id="pagination" class="pagination">';
 

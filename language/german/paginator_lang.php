@@ -1,13 +1,13 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
-* Name:  Paginator Lang - English
+* Name:  Paginator Lang - German
 * 
 * Author: Bastian Martin
 * 		  	ceo@mooseware.org
 * 
-* Description:  English language file for Paginator library
+* Description:  German language file for Paginator library
 * 
 */
 
 // paginator_pagination_summary
-$lang['paginator_pagination_summary'] 	  	 = '%s records found - %s to %s shown';
+$lang['paginator_pagination_summary'] 	  	 = '%s gefunden - %s bis %s angezeigt';
