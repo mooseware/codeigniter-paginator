@@ -6,7 +6,7 @@ class Sample_model extends CI_Model {
 		parent::__construct();
 	}
 
-	function get_records($search_string) {
+	public function get_records($search_string) {
 		// enable caching to store search params because after 
 		// calling count_all_results for pagination, db class deletes all params for some reason
 		$this->db->start_cache();

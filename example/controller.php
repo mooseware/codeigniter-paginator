@@ -2,13 +2,13 @@
 
 class Sample_controller extends Controller {
 	
-	function __construct() {
+	public function __construct() {
 		parent::__construct();
 		$this->load->model('sample_controller_model', 'model');
 		$this->load->library('paginator');
 	}
 	
-	function index() {
+	public function index() {
 		$this->data = array();
 		
 		// extract uri params
