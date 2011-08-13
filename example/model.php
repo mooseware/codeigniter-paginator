@@ -1,14 +1,14 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (defined('BASEPATH')) or ('No direct script access allowed');
 
 class Sample_model extends CI_Model {
 	
 	public function __construct() {
-		parent::CI_Model();
+		parent::__construct();
 	}
 
 	function get_records($search_string) {
-		// enable caching to store following conditions because after 
-		// calling count_all_results for pagination, sql looses all conditions
+		// enable caching to store search params because after 
+		// calling count_all_results for pagination, db class deletes all params for some reason
 		$this->db->start_cache();
 		if ('' != $search_string) {
 			$this->db->like('field1', $search_string);

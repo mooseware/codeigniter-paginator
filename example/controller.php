@@ -1,9 +1,9 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (defined('BASEPATH')) or ('No direct script access allowed');
 
 class Sample_controller extends Controller {
 	
 	function __construct() {
-		parent::Controller();
+		parent::__construct();
 		$this->load->model('sample_controller_model', 'model');
 		$this->load->library('paginator');
 	}
@@ -18,7 +18,7 @@ class Sample_controller extends Controller {
 		$this->paginator->start = $uri_params['start']; // extracted from uri
 		
 		// example to use a search string
-		// either use strings that comes from view form or (if navigated via pagination links) use string extracted from uri
+		// either use strings that come from view form or (if navigated via pagination links) use string extracted from uri
 		if ('' != $this->input->post('search_string')) {
 			$search_string = $this->input->post('search_string');
 		} else {

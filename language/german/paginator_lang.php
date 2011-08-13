@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (defined('BASEPATH')) or ('No direct script access allowed');
 /**
 * Name:  Paginator Lang - German
 * 
@@ -10,4 +10,4 @@
 */
 
 // paginator_pagination_summary
-$lang['paginator_pagination_summary'] 	  	 = '%s gefunden - %s bis %s angezeigt';
+$lang['paginator_pagination_summary'] = '%s gefunden - %s bis %s angezeigt';

@@ -6,7 +6,7 @@ CodeIgniter-Paginator is a simple pagination creator. I created this library to 
 ## Requirements
 
 1. PHP 5.1+
-2. CodeIgniter 1.7.x - 2.0-dev
+2. CodeIgniter 1.7.x - 2.0.2
 
 
 ## Configuration
